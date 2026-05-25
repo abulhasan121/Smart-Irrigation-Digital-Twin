@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dds>
+  <profiles xmlns="http://www.eprosima.com/XMLSchemas/fastRTPS_Profiles">
+    <transport_descriptors>
+      <transport_descriptor>
+        <transport_id>udp_localhost</transport_id>
+        <type>UDPv4</type>
+        <interfaceWhiteList>
+          <address>127.0.0.1</address>
+        </interfaceWhiteList>
+      </transport_descriptor>
+    </transport_descriptors>
+    <participant profile_name="localhost_participant" is_default_profile="true">
+      <rtps>
+        <userTransports>
+          <transport_id>udp_localhost</transport_id>
+        </userTransports>
+        <useBuiltinTransports>false</useBuiltinTransports>
+        <sendSocketBufferSize>1048576</sendSocketBufferSize>
+        <listenSocketBufferSize>4194304</listenSocketBufferSize>
+      </rtps>
+    </participant>
+  </profiles>
+</dds>
