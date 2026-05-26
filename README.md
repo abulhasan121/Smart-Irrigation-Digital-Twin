@@ -10,6 +10,15 @@ A prototype smart farm simulation that demonstrates how soil moisture sensing an
 
 ---
 
+
+## Demonstration
+
+Dashboard walkthrough: https://youtu.be/-oj_omCcm4U
+
+Digital twin walkthrough: https://youtu.be/Cs8zMvViqRA
+
+---
+
 ## Overview
 
 This prototype explores how a digital twin can be used to model and test smart irrigation logic before deploying it on real hardware. The simulation runs a closed-loop pipeline where virtual sensors feed data into an irrigation controller, which makes real-time ON/OFF decisions based on soil moisture thresholds. The results are visualised in both a 3D Gazebo environment and a live web dashboard.
